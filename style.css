@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Chicago';
+  src: url('https://files.cargocollective.com/ChicagoFLF.ttf');
+}
+
+body {
+  margin: 0;
+  background: #c3c3c3;
+  font-family: 'Chicago', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.mac-window {
+  width: 900px;
+  background: #e3e3e3;
+  border: 2px solid black;
+  box-shadow: 4px 4px 0 black;
+}
+
+.title-bar {
+  background: #bfbfbf;
+  padding: 6px;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.btn {
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 50%;
+}
+
+.content {
+  padding: 20px;
+}
+
+.mac-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 25px;
+}
+
+.mac-card {
+  background: #ffffff;
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.15s;
+  font-size: 20px;
+}
+
+.mac-card span {
+  display: block;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.mac-card:hover {
+  background: #dcdcdc;
+  transform: translate(-2px, -2px);
+  box-shadow: 2px 2px 0 black;
+}
+
+.info-panel {
+  background: #ffffff;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.info-panel h2 {
+  margin-top: 0;
+  font-size: 22px;
+}
